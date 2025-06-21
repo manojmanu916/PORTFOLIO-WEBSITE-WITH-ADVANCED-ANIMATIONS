@@ -86,3 +86,8 @@ Enhance accessibility with ARIA labels.
 
 Conclusion
 The portfolio effectively showcases Manoj’s skills with a modern design and advanced animations, meeting the task requirements while demonstrating his web development expertise.
+
+*OUTPUT*:
+
+![Image](https://github.com/user-attachments/assets/593f615c-9443-45fa-b076-4e47a248d9ed)
+![Image](https://github.com/user-attachments/assets/0a243ce7-f193-4d34-9f22-351e087307df)
