@@ -1,0 +1,318 @@
+/* css/styles.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.header {
+  text-align: center;
+  padding: 10px 10px;
+  background-color: #62b7a9;
+  color: white;
+}
+
+.nav {
+  background: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.social-links a img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(100%);
+}
+.social-links a:hover img {
+  transform: scale(1.2);
+  filter: grayscale(0%);
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 20px 0;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(145deg, rgb(146, 186, 120), #2a2a2a);
+  padding: 10px 20px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px #9fcd93, -5px -5px 15px #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.nav a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.skill-bar {
+  margin: 10px 0;
+}
+
+.bar {
+  height: 20px;
+  background: #ddd;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.bar::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  background: #007BFF;
+  width: 0;
+  animation: fillBar 2s forwards;
+}
+
+.bar.html::after { width: 90%; }
+.bar.css::after { width: 80%; }
+.bar.js::after { width: 70%; }
+
+@keyframes fillBar {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.project-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1e999b;
+  color: white;
+}
+.skills 
+
+.skills h2, .skills h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skill-bar {
+  margin: 10px 0;
+}
+
+.skill-bar span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.bar {
+  background: #444;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.progress {
+  height: 100%;
+  color: #fff;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 25px;
+  animation: fillBar 2s ease-in-out;
+}
+
+.progress.html { width: 90%; background: #e44d26; }
+.progress.css { width: 60%; background: #264de4; }
+.progress.js { width: 85%; background: #f0db4f; color: #000; }
+.progress.python { width: 50%; background: #306998; }
+.progress.react { width: 75%; background: #61dafb; color: #000; }
+
+@keyframes fillBar {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.professional-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.circle-box {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.circle-box:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: conic-gradient(#00ff88 var(--percent), #333 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.circle span {
+  position: absolute;
+}
+
+/* Percent Mapping */
+.circle[data-percent="90"] { --percent: 324deg; }
+.circle[data-percent="85"] { --percent: 306deg; }
+.circle[data-percent="75"] { --percent: 270deg; }
+.circle[data-percent="65"] { --percent: 234deg; }
+.technical-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.technical-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.skill-bar {
+  width: 300px;
+
+  border-radius: 10px;
+  padding: 10px 15px;
+ 
+  transition: transform 0.3s ease;
+}
+
+.skill-bar:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.skill-bar span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #55a0ad;
+}
+
+.bar {
+  width: 100%;
+  background: #2c2c2c;
+  border-radius: 20px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  color: white;
+  padding-left: 10px;
+  font-size: 12px;
+  line-height: 12px;
+  background: linear-gradient(to right, #00ff88, #00c98d);
+  border-radius: 20px;
+  animation: growBar 1.5s ease-out forwards;
+}
+
+.progress.html { width: 90%; }
+.progress.css { width: 60%; }
+.progress.js { width: 85%; }
+.progress.python { width: 50%; }
+.progress.react { width: 75%; }
+
+@keyframes growBar {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--final-width);
+  }
+}
+.about 
+
+.about h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.about-content p {
+  margin-bottom: 16px;
+}
+
+.about-content .highlight {
+  color: #007acc;
+  font-weight: bold;
+}
